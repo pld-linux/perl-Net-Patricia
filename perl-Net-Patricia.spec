@@ -1,9 +1,12 @@
+%define	pdir	Net
+%define	pnam	Patricia
 %include	/usr/lib/rpm/macros.perl
 Summary:	Net-Patricia perl module
 Summary(pl):	Modu³ perla Net-Patricia
 Name:		perl-Net-Patricia
 Version:	1.010
-Release:	2
+Release:	3
+
 License:	GPL
 Group:		Development/Languages/Perl
 Group(cs):	Vıvojové prostøedky/Programovací jazyky/Perl
@@ -20,7 +23,7 @@ Group(pt):	Desenvolvimento/Linguagens/Perl
 Group(ru):	òÁÚÒÁÂÏÔËÁ/ñÚÙËÉ/Perl
 Group(sl):	Razvoj/Jeziki/Perl
 Group(sv):	Utveckling/Språk/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/Net-Patricia-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-devel
