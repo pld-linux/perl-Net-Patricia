@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Net
-%define		pnam	Patricia
+%define	pdir	Net
+%define	pnam	Patricia
 Summary:	Net::Patricia Perl module
 Summary(cs):	Modul Net::Patricia pro Perl
 Summary(da):	Perlmodul Net::Patricia
