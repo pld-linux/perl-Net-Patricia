@@ -10,7 +10,7 @@ Summary(fr):	Module Perl Net::Patricia
 Summary(it):	Modulo di Perl Net::Patricia
 Summary(ja):	Net::Patricia Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Net::Patricia ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Net::Patricia
+Summary(nb):	Perlmodul Net::Patricia
 Summary(pl):	Modu³ Perla Net::Patricia
 Summary(pt):	Módulo de Perl Net::Patricia
 Summary(pt_BR):	Módulo Perl Net::Patricia
@@ -56,7 +56,7 @@ Net::Patricia Perl ¥â¥¸¥å¡¼¥ë
 %description -l ko
 Net::Patricia ÆÞ ¸ðÁÙ.
 
-%description -l no
+%description -l nb
 Perlmodul Net::Patricia.
 
 %description -l pl
