@@ -20,7 +20,7 @@ Summary(uk):	Модуль для Perl Net::Patricia
 Summary(zh_CN):	Net::Patricia Perl дё©И
 Name:		perl-Net-Patricia
 Version:	1.010
-Release:	5
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
