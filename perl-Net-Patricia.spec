@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	Patricia
-%include	/usr/lib/rpm/macros.perl
 Summary:	Net-Patricia perl module
 Summary(pl):	Modu³ perla Net-Patricia
 Name:		perl-Net-Patricia
 Version:	1.010
-Release:	3
-
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ Net-Patricia - Patricia Trie perl module for fast IP address lookups.
 Modu³ perla Net-Patricia.
 
 %prep
-%setup -q -n Net-Patricia-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
