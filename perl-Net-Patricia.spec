@@ -5,26 +5,11 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	Patricia
-Summary:	Net::Patricia Perl module
-Summary(cs):	Modul Net::Patricia pro Perl
-Summary(da):	Perlmodul Net::Patricia
-Summary(de):	Net::Patricia Perl Modul
-Summary(es):	Módulo de Perl Net::Patricia
-Summary(fr):	Module Perl Net::Patricia
-Summary(it):	Modulo di Perl Net::Patricia
-Summary(ja):	Net::Patricia Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	Net::Patricia ÆÞ ¸ðÁÙ
-Summary(nb):	Perlmodul Net::Patricia
-Summary(pl):	Modu³ Perla Net::Patricia
-Summary(pt):	Módulo de Perl Net::Patricia
-Summary(pt_BR):	Módulo Perl Net::Patricia
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Net::Patricia
-Summary(sv):	Net::Patricia Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Net::Patricia
-Summary(zh_CN):	Net::Patricia Perl Ä£¿é
+Summary:	Net::Patricia - Patricia Trie perl module for fast IP address lookups
+#Summary(pl):	
 Name:		perl-Net-Patricia
 Version:	1.010
-Release:	7
+Release:	8
 License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -34,55 +19,21 @@ BuildRequires:	perl-devel >= 1:5.8.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Net::Patricia - Patricia Trie perl module for fast IP address lookups.
+This module uses a Patricia Trie data structure to quickly perform IP
+address prefix matching for applications such as IP subnet, network or
+routing table lookups.
 
-%description -l cs
-Modul Net::Patricia pro Perl.
+The data structure is based on a radix tree using a radix of two,
+so sometimes you see patricia implementations called "radix" as well.
+The term "Trie" is derived from the word "retrieval" but is pronounced
+like "try".  Patricia stands for "Practical Algorithm to Retrieve
+Information Coded as Alphanumeric", and was first suggested for routing
+table lookups by Van Jacobsen.  Patricia Trie performance characteristics
+are well-known as it has been employed for routing table lookups within
+the BSD kernel since the 4.3 Reno release.
 
-%description -l da
-Perlmodul Net::Patricia.
-
-%description -l de
-Net::Patricia Perl Modul.
-
-%description -l es
-Módulo de Perl Net::Patricia.
-
-%description -l fr
-Module Perl Net::Patricia.
-
-%description -l it
-Modulo di Perl Net::Patricia.
-
-%description -l ja
-Net::Patricia Perl ¥â¥¸¥å¡¼¥ë
-
-%description -l ko
-Net::Patricia ÆÞ ¸ðÁÙ.
-
-%description -l nb
-Perlmodul Net::Patricia.
-
-%description -l pl
-Modu³ perla Net::Patricia.
-
-%description -l pt
-Módulo de Perl Net::Patricia.
-
-%description -l pt_BR
-Módulo Perl Net::Patricia.
-
-%description -l ru
-íÏÄÕÌØ ÄÌÑ Perl Net::Patricia.
-
-%description -l sv
-Net::Patricia Perlmodul.
-
-%description -l uk
-íÏÄÕÌØ ÄÌÑ Perl Net::Patricia.
-
-%description -l zh_CN
-Net::Patricia Perl Ä£¿é
+# %description -l pl
+# TODO
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
