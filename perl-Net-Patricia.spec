@@ -20,11 +20,11 @@ Summary(uk):	Модуль для Perl Net::Patricia
 Summary(zh_CN):	Net::Patricia Perl дё©И
 Name:		perl-Net-Patricia
 Version:	1.010
-Release:	5
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -84,7 +84,8 @@ Net::Patricia Perl дё©И
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
@@ -98,7 +99,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitearch}/Net/*.pm
-%dir %{perl_sitearch}/auto/Net/Patricia
-%attr(755,root,root) %{perl_sitearch}/auto/Net/Patricia/Patricia.so
+%{perl_vendorarch}/Net/*.pm
+%dir %{perl_vendorarch}/auto/Net/Patricia
+%attr(755,root,root) %{perl_vendorarch}/auto/Net/Patricia/Patricia.so
 %{_mandir}/man3/*
