@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	Patricia
 Summary:	Net::Patricia - Patricia Trie Perl module for fast IP address lookups
-Summary(pl):	Net::Patricia - modu≥ Perla Patricia Trie do szybkiego wyszukiwania adresÛw IP
+Summary(pl.UTF-8):   Net::Patricia - modu≈Ç Perla Patricia Trie do szybkiego wyszukiwania adres√≥w IP
 Name:		perl-Net-Patricia
 Version:	1.014
 Release:	1
@@ -32,21 +32,21 @@ routing table lookups by Van Jacobsen. Patricia Trie performance
 characteristics are well-known as it has been employed for routing
 table lookups within the BSD kernel since the 4.3 Reno release.
 
-%description -l pl
-Ten modu≥ uøywa struktury danych Patricia Trie do wykonywania
-szybkiego dopasowywania prefiksÛw IP dla zastosowaÒ takich jak
+%description -l pl.UTF-8
+Ten modu≈Ç u≈ºywa struktury danych Patricia Trie do wykonywania
+szybkiego dopasowywania prefiks√≥w IP dla zastosowa≈Ñ takich jak
 przeszukiwanie podsieci IP, sieci czy tabel routingu.
 
 Struktura danych jest oparta na drzewie radix przy podstawie
-wynosz±cej 2 - implementacje patricia czasem s± nazywane takøe radix.
-Termin "Trie" pochodzi od s≥owa "retrieval" (odczytywanie), ale jest
-wymawiany jak "try". Patricia to skrÛt od "Practical Algorithm to
+wynoszƒÖcej 2 - implementacje patricia czasem sƒÖ nazywane tak≈ºe radix.
+Termin "Trie" pochodzi od s≈Çowa "retrieval" (odczytywanie), ale jest
+wymawiany jak "try". Patricia to skr√≥t od "Practical Algorithm to
 Retrieve Information Coded as Alphanumeric" (praktyczny algorytm
 odczytywania informacji zakodowanych alfanumerycznie) i jako
 pierwszy zaproponowany do przeszukiwania tabel routingu przez Van
-Jacobsena. Charakterystyki wydajno∂ci Patricia Trie s± dobrze znane,
-jako øe struktura ta jest wykorzystywana przy przeszukiwaniu tabel
-routingu w j±drze BSD od wersji 4.3 Reno.
+Jacobsena. Charakterystyki wydajno≈õci Patricia Trie sƒÖ dobrze znane,
+jako ≈ºe struktura ta jest wykorzystywana przy przeszukiwaniu tabel
+routingu w jƒÖdrze BSD od wersji 4.3 Reno.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
