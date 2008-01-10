@@ -55,6 +55,7 @@ routingu w jądrze BSD od wersji 4.3 Reno.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
