@@ -8,12 +8,12 @@
 Summary:	Net::Patricia - Patricia Trie Perl module for fast IP address lookups
 Summary(pl.UTF-8):	Net::Patricia - moduł Perla Patricia Trie do szybkiego wyszukiwania adresów IP
 Name:		perl-Net-Patricia
-Version:	1.014
-Release:	3
+Version:	1.15
+Release:	1
 License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Net/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	16ec73b5b514dbe4275e349fca236c49
+# Source0-md5:	c068c3e061cca7fc6c721e56930465f8
 URL:		http://search.cpan.org/dist/Net-Patricia/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
