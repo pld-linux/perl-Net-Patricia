@@ -76,6 +76,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_vendorarch}/Net/*.pm
 %dir %{perl_vendorarch}/auto/Net/Patricia
-%{perl_vendorarch}/auto/Net/Patricia/Patricia.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Net/Patricia/Patricia.so
 %{_mandir}/man3/*
