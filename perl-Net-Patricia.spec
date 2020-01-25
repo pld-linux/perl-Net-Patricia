@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Net
 %define		pnam	Patricia
 Summary:	Net::Patricia - Patricia Trie Perl module for fast IP address lookups
