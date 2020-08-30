@@ -1,0 +1,10 @@
+--- Net-Patricia-1.22/Makefile.PL.orig	2012-10-09 16:36:34.000000000 +0200
++++ Net-Patricia-1.22/Makefile.PL	2020-08-30 18:56:13.305613689 +0200
+@@ -5,7 +5,6 @@
+ WriteMakefile(
+     'NAME'	=> 'Net::Patricia',
+     'VERSION_FROM' => 'Patricia.pm', # finds $VERSION
+-    'LIBS'	=> ['-lnsl'],   # e.g., '-lm' 
+     'DEFINE'	=> '',     # e.g., '-DHAVE_SOMETHING' 
+     'INC'	=> '',     # e.g., '-I/usr/include/other' 
+     'MYEXTLIB'	=> 'libpatricia/libpatricia$(LIB_EXT)',     # e.g., '-I/usr/include/other' 
