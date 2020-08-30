@@ -11,13 +11,14 @@ Version:	1.22
 Release:	9
 License:	GPL v2+
 Group:		Development/Languages/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/G/GR/GRUBER/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Net/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	ef838f7512b050ca4b35d742f9565b3b
-URL:		http://search.cpan.org/dist/Net-Patricia/
+URL:		https://metacpan.org/release/Net-Patricia
 BuildRequires:	perl-Net-CIDR-Lite
 BuildRequires:	perl-Socket6
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -74,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_vendorarch}/Net/*.pm
+%{perl_vendorarch}/Net/Patricia.pm
 %dir %{perl_vendorarch}/auto/Net/Patricia
 %attr(755,root,root) %{perl_vendorarch}/auto/Net/Patricia/Patricia.so
-%{_mandir}/man3/*
+%{_mandir}/man3/Net::Patricia.3pm*
